@@ -12,7 +12,8 @@ app.factory('authInterceptorService', ['$q', '$location', 'localStorageService',
             config.headers.Authorization = 'Bearer ' + authData.token;
         }
 
-        config.headers["Content-Type"] = 'application/json';
+        //config.headers['Content-Type'] = 'application/json';
+        //config.headers['Accept'] = 'application/json';
 
         return config;
     }

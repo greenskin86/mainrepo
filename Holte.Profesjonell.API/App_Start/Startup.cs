@@ -18,9 +18,9 @@ namespace Holte.Profesjonell.API
             ConfigureOAuth(app);
             HttpConfiguration config = new HttpConfiguration();
             WebApiConfig.Register(config);
-#if !DEBUG
+
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
-#endif
+
             app.UseWebApi(config);
         }
 

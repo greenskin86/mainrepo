@@ -5,10 +5,9 @@ app.factory('offersService', ['$http', function ($http) {
     self.ordersServiceFactory = {};
 
     self.getOffers = function () {
-
-        return $http.get(serviceBase + 'api/offers').then(function (results) {
-            return results;
-        });
+        //var authData = localStorageService.get('authorizationData');
+        //$httpProvider.defaults.headers.post['Authorization'] = 'Bearer ' + authData.token;
+        return $http.get(serviceBase + 'api/offers');
     };
 
     self.ordersServiceFactory.getOffers = self.getOffers;

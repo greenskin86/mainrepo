@@ -4,12 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using Holte.Profesjonell.API.Models;
 using Microsoft.AspNet.Identity;
 
 namespace Holte.Profesjonell.API.Controllers
 {
     [RoutePrefix("api/Account")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class AccountController : ApiController
     {
         private AuthRepository _repo;

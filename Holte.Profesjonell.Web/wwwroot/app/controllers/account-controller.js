@@ -7,5 +7,7 @@ app.controller('accountController', ['$scope', 'authService', '$location', 'offe
         return;
     }
 
-    self.offers = offersService.getOffers();
+    offersService.getOffers().then(function(result) {
+        self.offers = result.data;
+    });
 }]);
