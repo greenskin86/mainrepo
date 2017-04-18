@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\app\app.js" />
+    <Content Include="wwwroot\app\controllers\account-controller.js" />
+    <Content Include="wwwroot\app\controllers\home-controller.js" />
+    <Content Include="wwwroot\app\controllers\index-controller.js" />
+    <Content Include="wwwroot\app\controllers\login-controller.js" />
+    <Content Include="wwwroot\app\controllers\signup-controller.js" />
+    <Content Include="wwwroot\app\controllers\user-data-controller.js" />
+    <Content Include="wwwroot\app\services\auth-interceptor-service.js" />
+    <Content Include="wwwroot\app\services\auth-service.js" />
+    <Content Include="wwwroot\app\services\offers-service.js" />
+    <Content Include="wwwroot\app\views\home-view.html" />
+    <Content Include="wwwroot\app\views\login-view.html" />
+    <Content Include="wwwroot\app\views\account-view.html" />
+    <Content Include="wwwroot\app\views\signup-view.html" />
+    <Content Include="wwwroot\content\css\site.css" />
+    <Content Include="wwwroot\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>
